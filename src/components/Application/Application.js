@@ -1,6 +1,8 @@
 import React from "react";
-import NavigationBar from "./components/NavigationBar";
-import Project from "./components/Project";
+import NavigationBar from "../NavigationBar/NavigationBar";
+import Project from "../Project/Project";
+import ContactForm from "../ContactForm/ContactForm";
+import "./application.css";
 
 class Application extends React.Component {
   render() {
@@ -14,6 +16,7 @@ class Application extends React.Component {
             <Project side={"normal"} />
             <Project side={"reverse"} />
           </main>
+          <ContactForm />
         </body>
       </html>
     );

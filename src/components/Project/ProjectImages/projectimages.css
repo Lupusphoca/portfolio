@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.project .images {
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.project .reverse-images {
+    grid-column: 4 / 5;
+    width: 100%;
+    height: 100%;
+}

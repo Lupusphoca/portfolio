@@ -1,4 +1,5 @@
 import React from "react";
+import "./projectinformations.css";
 
 class ProjectInformations extends React.Component {
   render() {

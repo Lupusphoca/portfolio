@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.project {
+    display: grid;
+    background-color: brown;
+    height: 500px;
+    width: 100%;
+    grid-template-columns: 5% 40% 10% 40% 5%;
+    margin: 50px 0 50px 0;
+    /* padding: 50px 0 50px 0; */
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import ProjectImages from "./Project/ProjectImages.js";
-import ProjectInformations from "./Project/ProjectInformations.js";
+import ProjectImages from "./ProjectImages/ProjectImages.js";
+import ProjectInformations from "./ProjectInformations/ProjectInformations.js";
+import "./project.css";
 
 class Project extends React.Component {
   render() {
