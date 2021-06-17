@@ -1,7 +1,14 @@
+// == Import : npm
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// == Import : local components
 import Application from './components/Application/Application';
+
+// == Import : local css
+import './index.css';
+
+// == Import : others
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

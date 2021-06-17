@@ -1,7 +1,13 @@
+// == Import : npm
 import React from "react";
+
+// == Import : local components
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Project from "../Project/Project";
 import ContactForm from "../ContactForm/ContactForm";
+import Footer from "../Footer/Footer";
+
+// == Import : local css
 import "./application.css";
 
 class Application extends React.Component {
@@ -18,6 +24,7 @@ class Application extends React.Component {
           </main>
           <ContactForm />
         </body>
+        <Footer/>
       </html>
     );
   }

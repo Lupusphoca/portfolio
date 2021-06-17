@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+footer {
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-top: 1.4px solid gray;
+    height: 500px;
+    background-color: blue;
+}
+
+footer .container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: green;
+}
+
+.copyright {
+    font-size: 1.7vh;
+    letter-spacing: 1px;
+    text-align: center;
+}
