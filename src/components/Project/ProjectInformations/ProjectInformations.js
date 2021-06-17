@@ -1,4 +1,7 @@
+// == Import : npm
 import React from "react";
+
+// == Import : local css
 import "./projectinformations.css";
 
 class ProjectInformations extends React.Component {

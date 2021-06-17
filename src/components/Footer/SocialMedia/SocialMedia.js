@@ -1,4 +1,7 @@
+// == Import : npm
 import React from "react";
+
+// == Import : local css
 import "./socialmedia.css";
 
 class SocialMedia extends React.Component {
