@@ -6,6 +6,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Project from "../Project/Project";
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
+import HeroPresentation from "../HeroPresentation/HeroPresentation";
 
 // == Import : local css
 import "./application.css";
@@ -15,6 +16,7 @@ class Application extends React.Component {
     return (
       <html>
         <body>
+          <HeroPresentation />
           <NavigationBar />
           <main>
             <Project side={"normal"} />
@@ -24,7 +26,7 @@ class Application extends React.Component {
           </main>
           <ContactForm />
         </body>
-        <Footer/>
+        <Footer />
       </html>
     );
   }

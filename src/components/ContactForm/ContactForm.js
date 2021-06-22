@@ -150,7 +150,7 @@ class ContactForm extends React.Component {
             style={textAreaStyles}
           ></textarea>
 
-          <input type="submit" value="Submit"></input>
+          <input type="submit" value="Envoyez"></input>
           {/* <button type='submit'>Submit</button> */}
         </form>
       </div>

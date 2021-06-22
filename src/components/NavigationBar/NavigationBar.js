@@ -9,14 +9,34 @@ import "./navigationbar.css";
 
 class NavigationBar extends React.Component {
   render() {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("scroll", StickyHeaderDetection);
+      var navbar = document.getElementById("sticky-navbar");
+      var emptyNavbar = document.getElementById("empty-div");
+      var sticky = navbar.offsetTop;
+
+      function StickyHeaderDetection() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          emptyNavbar.classList.add("empty-navbar");
+        } else {
+          navbar.classList.remove("sticky");
+          emptyNavbar.classList.remove("empty-navbar");
+        }
+      }
+    });
+
     return (
-      <header>
-        <Name />
-        <div className="topics">
-          <h2>Projets</h2>
-          <h2>Contacts</h2>
+      <div>
+        <div className="navbar" id="sticky-navbar">
+          <Name />
+          <div className="topics">
+            <h2>Projets</h2>
+            <h2>Contacts</h2>
+          </div>
         </div>
-      </header>
+        <div id="empty-div"/>
+      </div>
     );
   }
 }
