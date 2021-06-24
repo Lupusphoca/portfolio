@@ -1,15 +1,17 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 .project {
     display: grid;
-    background-color: brown;
-    height: 500px;
     width: 100%;
+    height: 500px;
+
     grid-template-columns: 5% 40% 10% 40% 5%;
-    margin: 50px 0 50px 0;
-    /* padding: 50px 0 50px 0; */
+    grid-template-rows: 100%;
+
+    margin: 50px 0 50px 0; /* Up and Down space around project */
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 40% 10% 40% 5%;
+  }
 }

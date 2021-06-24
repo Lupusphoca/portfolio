@@ -7,16 +7,28 @@ import "./projectinformations.css";
 class ProjectInformations extends React.Component {
   render() {
     var side = this.props.side;
+
+    var projectLogo = this.props.projectLogo;
+    var projectTitle = this.props.projectTitle;
+
+    var projectResume = this.props.projectResume;
+
+    var projectTextLink = this.props.projectTextLink;
+    var projectLink = this.props.projectLink;
+
     var informationsClass =
-      side === "normal" ? "informations" : "reverse-informations";
-      
+      side === "normal" ? "informations" : "r-informations";
+
     return (
-      <div className={informationsClass}>
-        <div className="logo">Petit logo</div>
-        <div className="title">Titre du projet</div>
-        <div className="resume">Résumé du projet</div>
-        <div className="tools">Outils utilisés</div>
-        <div className="links">Lien pour retrouver le projet</div>
+      <div id={informationsClass}>
+        <div id="logo-container">
+          <img id="logo" src={projectLogo} alt="Logo"></img>
+        </div>
+        <h1 id="title">{projectTitle}</h1>
+        <div id="resume">{projectResume}</div>
+        <a id="link" href={projectLink}  target="_blank" rel="noreferrer">
+          {projectTextLink}
+        </a>
       </div>
     );
   }

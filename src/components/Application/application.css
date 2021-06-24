@@ -8,6 +8,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(  #4B804D 0%, #4C8C73 20%, #519668 40%, #679651 60%, #7A8F4F 80%);
 }
 
 code {

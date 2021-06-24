@@ -12,17 +12,45 @@ class Project extends React.Component {
   render() {
     var side = this.props.side;
 
+    var modalImage = this.props.modalImage;
+    var imageAlternative = this.props.imageAlternative;
+
+    var projectLogo = this.props.projectLogo;
+    var projectTitle = this.props.projectTitle;
+
+    var projectResume = this.props.projectResume;
+
+    var projectTextLink = this.props.projectTextLink;
+    var projectLink = this.props.projectLink;
+
+    function DivProjectInformations() {
+      return (
+        <ProjectInformations
+          side={side}
+          projectLogo={projectLogo}
+          projectTitle={projectTitle}
+          projectResume={projectResume}
+          projectTextLink={projectTextLink}
+          projectLink={projectLink}
+        />
+      );
+    }
+
+    function DivProjectImages() {
+      return (
+        <ProjectImages
+          side={side}
+          modalImage={modalImage}
+          imageAlternative={imageAlternative}
+        />
+      );
+    }
+
     function Siding() {
       if (side === "normal") {
-        return [
-          <ProjectImages side={side} />,
-          <ProjectInformations side={side} />,
-        ];
+        return [DivProjectImages(), DivProjectInformations()];
       } else {
-        return [
-          <ProjectInformations side={side} />,
-          <ProjectImages side={side} />,
-        ];
+        return [DivProjectInformations(), DivProjectImages()];
       }
     }
     return <div className="project">{Siding()}</div>;

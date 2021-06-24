@@ -108,51 +108,54 @@ class ContactForm extends React.Component {
     };
 
     return (
-      <div class="form-container">
-        <form onSubmit={this.handleSubmit}>
-          <Field
-            type="text"
-            name="nom"
-            value={this.state.nom}
-            onChange={this.handleChange}
-          >
-            Nom
-          </Field>
+      <div>
+        <h2 id="contact">Contact</h2>
+        <div class="form-container">
+          <form onSubmit={this.handleSubmit}>
+            <Field
+              type="text"
+              name="nom"
+              value={this.state.nom}
+              onChange={this.handleChange}
+            >
+              Nom
+            </Field>
 
-          <Field
-            type="text"
-            name="prenom"
-            value={this.state.prenom}
-            onChange={this.handleChange}
-          >
-            Prénom
-          </Field>
+            <Field
+              type="text"
+              name="prenom"
+              value={this.state.prenom}
+              onChange={this.handleChange}
+            >
+              Prénom
+            </Field>
 
-          <Field
-            type="text"
-            name="mail"
-            value={this.state.mail}
-            onChange={this.verifyMail}
-          >
-            Adresse Mail
-          </Field>
-          <ErrorMailWarning
-            b={eligibleMail}
-            mail={this.state.mail}
-          ></ErrorMailWarning>
+            <Field
+              type="text"
+              name="mail"
+              value={this.state.mail}
+              onChange={this.verifyMail}
+            >
+              Adresse Mail
+            </Field>
+            <ErrorMailWarning
+              b={eligibleMail}
+              mail={this.state.mail}
+            ></ErrorMailWarning>
 
-          <label htmlFor="message">Message</label>
-          <textarea
-            value={this.state.message}
-            onChange={this.handleChange}
-            id="message"
-            name="message"
-            style={textAreaStyles}
-          ></textarea>
+            <label htmlFor="message">Message</label>
+            <textarea
+              value={this.state.message}
+              onChange={this.handleChange}
+              id="message"
+              name="message"
+              style={textAreaStyles}
+            ></textarea>
 
-          <input type="submit" value="Envoyez"></input>
-          {/* <button type='submit'>Submit</button> */}
-        </form>
+            <input type="submit" value="Envoyez"></input>
+            {/* <button type='submit'>Submit</button> */}
+          </form>
+        </div>
       </div>
     );
   }

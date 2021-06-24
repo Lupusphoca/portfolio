@@ -8,9 +8,9 @@ import "./footer.css";
 import SocialMedia from "./SocialMedia/SocialMedia";
 
 // == Import : local images
-import TwitterLogo from "../../img/twitter.png";
-import InstagramLogo from "../../img/instagram.png";
-import LinkedInLogo from "../../img/facebook.png";
+import TwitterLogo from "../../images/social-media/twitter.png";
+import InstagramLogo from "../../images/social-media/instagram.png";
+import LinkedInLogo from "../../images/social-media/facebook.png";
 
 class Footer extends React.Component {
     render() {
