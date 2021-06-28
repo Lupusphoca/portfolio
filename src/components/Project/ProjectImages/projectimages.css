@@ -8,7 +8,7 @@
   margin: auto;
 }
 
-#image {
+.projectImage {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -18,7 +18,7 @@
   border: 5px solid whitesmoke;
 }
 
-#image:hover {
+.projectImage:hover {
   opacity: 0.7;
 }
 
@@ -29,7 +29,7 @@
     grid-row: 2 / 3;
   }
 
-  #image {
+  .projectImage {
     max-height: 225px;
   }
 }
@@ -55,7 +55,7 @@
   max-height: 80%;
 }
 
-#caption {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -67,7 +67,7 @@
 }
 
 .modal-content,
-#caption {
+.caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }

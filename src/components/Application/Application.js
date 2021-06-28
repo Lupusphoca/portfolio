@@ -11,9 +11,8 @@ import HeroPresentation from "../HeroPresentation/HeroPresentation";
 // == Import : local css
 import "./application.css";
 
-// == Import : local images
-import RushlineModalImage from "../../images/rushline/rushline-3.jpg";
-import RushlineLogo from "../../images/rushline/rushline-logo.png";
+// == Import : local data json
+import {stockProjects} from "../../json/data.js";
 
 class Application extends React.Component {
   render() {
@@ -25,19 +24,43 @@ class Application extends React.Component {
           <main>
             <Project
               side={"normal"}
-              modalImage={RushlineModalImage}
-              imageAlternative={"Rushline - Hikokawa Ascend"}
-              projectLogo={RushlineLogo}
-              projectTitle={"Rushline - Hikokawa Ascend"}
-              projectResume={
-                "Rushline is a 4v4 game where you have to capture the enemy s ball in your side to score. You have two guns to achieve this, a gun to teleport and a gun to shoot enemies. Meet Hikokawa, the city where the fight takes place with its intricate design and secret passage, and master its layout to stealth your way through the enemy side and  get that ball back in your temple. Fight your friends in accuracy-based long-ranged battles or in the tense, frenetic close combat that the mastery of both guns enables."
-              }
-              projectTextLink={
-                "Itch.io - Rushline"
-              }
-              projectLink={
-                "https://pierre-arnaudet.itch.io/rushline-hikokawa-ascend"
-              }
+              projectKey="0"
+              modalImage={stockProjects[0].modalImage}
+              projectLogo={stockProjects[0].projectLogo}
+              projectTitle={stockProjects[0].projectTitle}
+              projectResume={stockProjects[0].projectResume}
+              projectURL={stockProjects[0].projectURL}
+              projectLink={stockProjects[0].codeURL}
+            />
+            <Project
+              side={"reverse"}
+              projectKey="1"
+              modalImage={stockProjects[1].modalImage}
+              projectLogo={stockProjects[1].projectLogo}
+              projectTitle={stockProjects[1].projectTitle}
+              projectResume={stockProjects[1].projectResume}
+              projectURL={stockProjects[1].projectURL}
+              projectLink={stockProjects[1].codeURL}
+            />
+            <Project
+              side={"normal"}
+              projectKey="2"
+              modalImage={stockProjects[2].modalImage}
+              projectLogo={stockProjects[2].projectLogo}
+              projectTitle={stockProjects[2].projectTitle}
+              projectResume={stockProjects[2].projectResume}
+              projectURL={stockProjects[2].projectURL}
+              projectLink={stockProjects[2].codeURL}
+            />
+            <Project
+              side={"reverse"}
+              projectKey="3"
+              modalImage={stockProjects[3].modalImage}
+              projectLogo={stockProjects[3].projectLogo}
+              projectTitle={stockProjects[3].projectTitle}
+              projectResume={stockProjects[3].projectResume}
+              projectURL={stockProjects[3].projectURL}
+              projectLink={stockProjects[3].codeURL}
             />
           </main>
           <ContactForm />

@@ -11,16 +11,16 @@ import "./project.css";
 class Project extends React.Component {
   render() {
     var side = this.props.side;
+    var projectKey =  this.props.projectKey;
 
     var modalImage = this.props.modalImage;
-    var imageAlternative = this.props.imageAlternative;
 
     var projectLogo = this.props.projectLogo;
     var projectTitle = this.props.projectTitle;
 
     var projectResume = this.props.projectResume;
 
-    var projectTextLink = this.props.projectTextLink;
+    var projectURL = this.props.projectURL;
     var projectLink = this.props.projectLink;
 
     function DivProjectInformations() {
@@ -30,7 +30,7 @@ class Project extends React.Component {
           projectLogo={projectLogo}
           projectTitle={projectTitle}
           projectResume={projectResume}
-          projectTextLink={projectTextLink}
+          projectURL={projectURL}
           projectLink={projectLink}
         />
       );
@@ -40,8 +40,9 @@ class Project extends React.Component {
       return (
         <ProjectImages
           side={side}
+          projectKey={projectKey}
+          projectTitle={projectTitle}
           modalImage={modalImage}
-          imageAlternative={imageAlternative}
         />
       );
     }
