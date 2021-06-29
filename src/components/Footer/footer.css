@@ -1,7 +1,7 @@
 footer {
-    font-size: 10px;
-    letter-spacing: 1px;
-    height: 100px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  height: 100px;
 }
 
 .container {
@@ -12,7 +12,7 @@ footer {
 }
 
 .copyright {
-    font-size: 1.7vh;
-    letter-spacing: 1px;
-    text-align: center;
+  font-size: 1.7vh;
+  letter-spacing: 1px;
+  text-align: center;
 }

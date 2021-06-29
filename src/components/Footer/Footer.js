@@ -10,16 +10,16 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 // == Import : local images
 import TwitterLogo from "../../images/social-media/twitter.png";
 import InstagramLogo from "../../images/social-media/instagram.png";
-import LinkedInLogo from "../../images/social-media/facebook.png";
+import LinkedInLogo from "../../images/social-media/linkedin.png";
 
 class Footer extends React.Component {
     render() {
         return (
             <footer>
                 <div className="container">
-                    <SocialMedia href={"https://twitter.com/Loufhok"} class={"social-media-image"} src={TwitterLogo} alt={"Twitter"} />
-                    <SocialMedia href={"https://www.instagram.com/parnaudet/?hl=fr"} class={"social-media-image"} src={InstagramLogo} alt={"Instagram"} />
-                    <SocialMedia href={"https://www.linkedin.com/in/pierre-arnaudet/"} class={"social-media-image"} src={LinkedInLogo} alt={"LinkedIn"} />
+                    <SocialMedia href="https://twitter.com/Loufhok" src={TwitterLogo} alt="Twitter" />
+                    <SocialMedia href="https://www.instagram.com/parnaudet/?hl=fr" src={InstagramLogo} alt="Instagram" />
+                    <SocialMedia href="https://www.linkedin.com/in/pierre-arnaudet/" src={LinkedInLogo} alt="LinkedIn" />
                 </div>
                 <div className="copyright">
                     Pierre ARNAUDET - 2021 ©

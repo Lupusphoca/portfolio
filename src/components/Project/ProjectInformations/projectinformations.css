@@ -1,30 +1,30 @@
-#informations {
+.informations {
   grid-column: 4 / 5;
 }
 
-#r-informations {
+.r-informations {
   grid-column: 2 / 3;
 }
 
-#informations,
-#r-informations {
+.informations,
+.r-informations {
   display: grid;
-  grid-template-rows: 15% 80% 5%;
+  grid-template-rows: 20% 60% 20%;
   grid-template-columns: 20% 30% 30% 20%;
-  height: 75%;
-  align-self: center;
 
-  width: 90%;
-  justify-self: center;
+  height: 100%;
+  width: 100%;
+  /* align-self: center;
+  justify-self: center; */
 }
 
-#logo-container {
+.logo-container {
   grid-area: 1 / 4 / 2 / 5;
   align-self: center;
   justify-self: center;
 }
 
-#logo {
+.logo {
   width: auto;
   height: auto;
   max-width: 100px;
@@ -32,51 +32,84 @@
   padding: 10px;
 }
 
-#title {
+.title {
   grid-area: 1 / 1 / 2 / 4;
-  align-self: center;
   justify-self: left;
 
-  font-size: 3.2vh;
+  font-size: 3vh;
   line-height: 5vh;
   letter-spacing: 0.35vh;
   text-transform: uppercase;
   border-bottom: 1.5px solid whitesmoke;
 }
 
-#resume {
+.resume {
   grid-area: 2 / 1 / 3 / 5;
-  align-self: center;
-  justify-self: center;
-
-  line-height: 2.5vh;
-  letter-spacing: 2px;
-  font-size: 2vh;
+  display: flex;
 }
 
-#link {
-  grid-area: 3 / 1 / 4 / 5;
+.resume-content {
   align-self: center;
   justify-self: center;
-  padding-top: 15px;
+
+  text-align: center;
+  line-height: 2.5vh;
+  letter-spacing: 2px;
+}
+
+.links {
+  grid-area: 3 / 1 / 4 / 5;
+  display: flex;
+  justify-content: space-around;
+
   font-style: italic;
 }
 
+.url-button {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #99b372;
+  border: 1px solid whitesmoke;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50%;
+  align-self: center;
+}
+
+.url-button:hover {
+  background-color: #787a48;
+  opacity: 0.3;
+}
+
 @media screen and (max-width: 1000px) {
-  #informations,
-  #r-informations {
+  .informations,
+  .r-informations {
     grid-column: auto;
     grid-row: 4 / 5;
+    width: 90%;
+    justify-self: center;
   }
 
-  #resume {
+  /* .resume {
     font-size: 1.5vh;
     letter-spacing: 1px;
     padding-top: 20px;
+  } */
+
+  .resume-content {
+    font-size: 1.5vh;
+    letter-spacing: 1px;
+    overflow: auto;
+    height: 80%;
   }
 
-  #title {
-    font-size: 2.5vh;
+  .title {
+    font-size: 2vh;
     line-height: 4vh;
+  }
+
+  .url-button {
+    height: 100%;
   }
 }

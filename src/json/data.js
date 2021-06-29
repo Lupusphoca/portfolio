@@ -16,9 +16,7 @@ export const stockProjects = [
     modalImage: RushlineModalImage,
     projectLogo: RushlineLogo,
     projectResume: `Rushline is a 4v4 game where you have to capture the enemy s ball in your side to score. 
-    You have two guns to achieve this, a gun to teleport and a gun to shoot enemies. 
-    Meet Hikokawa, the city where the fight takes place with its intricate design and secret passage, and master its layout to stealth your way through the enemy side and  get that ball back in your temple.
-    Fight your friends in accuracy-based long-ranged battles or in the tense, frenetic close combat that the mastery of both guns enables.`,
+    You have two guns to achieve this, a gun to teleport and a gun to shoot enemies.`,
     projectURL: "https://pierre-arnaudet.itch.io/rushline-hikokawa-ascend",
     codeURL: "https://bitbucket.org/HugoCharrierEArt/rushline_project/src/master/"
   },

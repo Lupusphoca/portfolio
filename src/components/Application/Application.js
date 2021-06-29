@@ -30,7 +30,7 @@ class Application extends React.Component {
               projectTitle={stockProjects[0].projectTitle}
               projectResume={stockProjects[0].projectResume}
               projectURL={stockProjects[0].projectURL}
-              projectLink={stockProjects[0].codeURL}
+              codeURL={stockProjects[0].codeURL}
             />
             <Project
               side={"reverse"}
@@ -40,7 +40,7 @@ class Application extends React.Component {
               projectTitle={stockProjects[1].projectTitle}
               projectResume={stockProjects[1].projectResume}
               projectURL={stockProjects[1].projectURL}
-              projectLink={stockProjects[1].codeURL}
+              codeURL={stockProjects[1].codeURL}
             />
             <Project
               side={"normal"}
@@ -50,7 +50,7 @@ class Application extends React.Component {
               projectTitle={stockProjects[2].projectTitle}
               projectResume={stockProjects[2].projectResume}
               projectURL={stockProjects[2].projectURL}
-              projectLink={stockProjects[2].codeURL}
+              codeURL={stockProjects[2].codeURL}
             />
             <Project
               side={"reverse"}
@@ -60,7 +60,7 @@ class Application extends React.Component {
               projectTitle={stockProjects[3].projectTitle}
               projectResume={stockProjects[3].projectResume}
               projectURL={stockProjects[3].projectURL}
-              projectLink={stockProjects[3].codeURL}
+              codeURL={stockProjects[3].codeURL}
             />
           </main>
           <ContactForm />

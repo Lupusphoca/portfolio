@@ -6,7 +6,8 @@
     grid-template-columns: 5% 40% 10% 40% 5%;
     grid-template-rows: 100%;
 
-    margin: 50px 0 50px 0; /* Up and Down space around project */
+    margin: 150px 0 150px 0; /* Up and Down space around project */
+
 }
 
 @media screen and (max-width: 1000px) {

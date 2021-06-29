@@ -86,6 +86,9 @@ class ContactForm extends React.Component {
         mail: "",
         message: "",
       });
+      window.alert(
+        "Votre mail est envoyé avec succès !"
+      );
     } else {
       window.alert(
         "Veuillez renseigner une adresse mail valide s'il vous plaît !"
@@ -104,7 +107,6 @@ class ContactForm extends React.Component {
   render() {
     var textAreaStyles = {
       height: "200px",
-      color: "blue",
     };
 
     return (

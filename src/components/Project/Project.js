@@ -21,7 +21,7 @@ class Project extends React.Component {
     var projectResume = this.props.projectResume;
 
     var projectURL = this.props.projectURL;
-    var projectLink = this.props.projectLink;
+    var codeURL = this.props.codeURL;
 
     function DivProjectInformations() {
       return (
@@ -31,7 +31,7 @@ class Project extends React.Component {
           projectTitle={projectTitle}
           projectResume={projectResume}
           projectURL={projectURL}
-          projectLink={projectLink}
+          codeURL={codeURL}
         />
       );
     }
