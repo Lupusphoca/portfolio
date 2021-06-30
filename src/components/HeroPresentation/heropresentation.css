@@ -17,19 +17,3 @@ h1 {
   text-align: center;
   color: white;
 }
-
-.hero-text button {
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px 15px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}

@@ -10,6 +10,7 @@ import "./project.css";
 
 class Project extends React.Component {
   render() {
+    
     var side = this.props.side;
     var projectKey =  this.props.projectKey;
 
@@ -22,6 +23,7 @@ class Project extends React.Component {
 
     var projectURL = this.props.projectURL;
     var codeURL = this.props.codeURL;
+    var reference = this.props.reference;
 
     function DivProjectInformations() {
       return (
@@ -32,6 +34,7 @@ class Project extends React.Component {
           projectResume={projectResume}
           projectURL={projectURL}
           codeURL={codeURL}
+          reference={reference}
         />
       );
     }

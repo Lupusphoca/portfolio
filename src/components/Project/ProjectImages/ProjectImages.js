@@ -49,7 +49,7 @@ class ProjectImages extends React.Component {
           <img
             id={"modal-image" + projectKey}
             className="modal-content"
-            alt="Modal Image"
+            alt="Modal"
           ></img>
           <div id={"caption" + projectKey} className="caption"></div>
         </div>

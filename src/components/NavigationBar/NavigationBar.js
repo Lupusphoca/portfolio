@@ -31,11 +31,11 @@ class NavigationBar extends React.Component {
         <div className="navbar" id="sticky-navbar">
           <Name />
           <div className="topics">
-            <h2>Projets</h2>
-            <h2>Contacts</h2>
+            <h2 onClick={() => this.props.scrollToContent("rushline")}>Projets</h2>
+            <h2 onClick={() => this.props.scrollToContent("contact")}>Contacts</h2>
           </div>
         </div>
-        <div id="empty-div"/>
+        <div id="empty-div" />
       </div>
     );
   }

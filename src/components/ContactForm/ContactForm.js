@@ -109,8 +109,10 @@ class ContactForm extends React.Component {
       height: "200px",
     };
 
+    var reference = this.props.reference;
+
     return (
-      <div>
+      <div ref={reference}>
         <h2 id="contact">Contact</h2>
         <div class="form-container">
           <form onSubmit={this.handleSubmit}>

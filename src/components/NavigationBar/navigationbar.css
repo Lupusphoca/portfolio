@@ -11,6 +11,10 @@ h2 {
   font-weight: lighter;
 }
 
+h2:hover {
+  cursor:pointer;
+}
+
 .topics {
   display: flex;
   justify-content: space-around;
@@ -19,7 +23,7 @@ h2 {
 }
 
 .navbar {
-  background-color: #3b9170;
+  background-color: #389270;
   height: 100px;
   width: 100%;
   display: flex;

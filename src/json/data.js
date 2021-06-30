@@ -10,6 +10,9 @@ import AliceLogo from "../images/alice/alice-logo.png";
 import CorrompuModalImage from "../images/corrompu/corrompu.jpg";
 import CorrompuLogo from "../images/corrompu/corrompu-logo.png";
 
+import RainyModalImage from "../images/rainymood/rainymood.jpg";
+import RainyLogo from "../images/rainymood/rainymood-logo.png";
+
 export const stockProjects = [
   {
     projectTitle: "Rushline - Hikokawa Ascend",
@@ -44,5 +47,13 @@ export const stockProjects = [
     projectResume: `Corrompu is a french table top rpg where you play someone which is possessed by his own phobical fear in a typical 80s dark modern city.`,
     projectURL: "https://pierre-arnaudet.itch.io/corrompu",
     codeURL: ""
+  },
+  {
+    projectTitle: "RainyMood Like",
+    modalImage: RainyModalImage,
+    projectLogo: RainyLogo,
+    projectResume: `First React.JS made in 2 days as a training by doing a replica of RainyMood website`,
+    projectURL: "https://lupusphoca.github.io/rainymood-like/",
+    codeURL: "https://github.com/Lupusphoca/rainymood-like"
   },
 ]

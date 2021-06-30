@@ -12,15 +12,55 @@ import HeroPresentation from "../HeroPresentation/HeroPresentation";
 import "./application.css";
 
 // == Import : local data json
-import {stockProjects} from "../../json/data.js";
+import { stockProjects } from "../../json/data.js";
 
 class Application extends React.Component {
+  constructor(props) {
+    super(props);
+    this.refRushline = React.createRef();
+    this.refSesame = React.createRef();
+    this.refAlice = React.createRef();
+    this.refCorrompu = React.createRef();
+    this.refRainymood = React.createRef();
+    this.refContact = React.createRef();
+    this.scrollToContent = this.scrollToContent.bind(this);
+  }
+
+  scrollToContent(content) {
+    var ref = null;
+    switch (content) {
+      case "rushline":
+        ref = this.refRushline;
+        break;
+      case "sesame":
+        ref = this.refSesame;
+        break;
+      case "alice":
+        ref = this.refAlice;
+        break;
+      case "corrompu":
+        ref = this.refCorrompu;
+        break;
+      case "rainymood":
+        ref = this.refRainymood;
+        break;
+      case "contact":
+        ref = this.refContact;
+        break;
+      default:
+        break;
+    }
+    if (ref !== null) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   render() {
     return (
       <html>
         <body>
           <HeroPresentation />
-          <NavigationBar />
+          <NavigationBar scrollToContent={this.scrollToContent} />
           <main>
             <Project
               side={"normal"}
@@ -31,6 +71,7 @@ class Application extends React.Component {
               projectResume={stockProjects[0].projectResume}
               projectURL={stockProjects[0].projectURL}
               codeURL={stockProjects[0].codeURL}
+              reference={this.refRushline}
             />
             <Project
               side={"reverse"}
@@ -41,6 +82,7 @@ class Application extends React.Component {
               projectResume={stockProjects[1].projectResume}
               projectURL={stockProjects[1].projectURL}
               codeURL={stockProjects[1].codeURL}
+              reference={this.refSesame}
             />
             <Project
               side={"normal"}
@@ -51,6 +93,7 @@ class Application extends React.Component {
               projectResume={stockProjects[2].projectResume}
               projectURL={stockProjects[2].projectURL}
               codeURL={stockProjects[2].codeURL}
+              reference={this.refAlice}
             />
             <Project
               side={"reverse"}
@@ -61,9 +104,21 @@ class Application extends React.Component {
               projectResume={stockProjects[3].projectResume}
               projectURL={stockProjects[3].projectURL}
               codeURL={stockProjects[3].codeURL}
+              reference={this.refCorrompu}
+            />
+            <Project
+              side={"normal"}
+              projectKey="4"
+              modalImage={stockProjects[4].modalImage}
+              projectLogo={stockProjects[4].projectLogo}
+              projectTitle={stockProjects[4].projectTitle}
+              projectResume={stockProjects[4].projectResume}
+              projectURL={stockProjects[4].projectURL}
+              codeURL={stockProjects[4].codeURL}
+              reference={this.refRainymood}
             />
           </main>
-          <ContactForm />
+          <ContactForm reference={this.refContact} />
         </body>
         <Footer />
       </html>

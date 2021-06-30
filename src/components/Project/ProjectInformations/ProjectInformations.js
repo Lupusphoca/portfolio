@@ -16,7 +16,6 @@ function DisplayURL(url, name) {
 
 class ProjectInformations extends React.Component {
   render() {
-    var ReactFitText = require("react-fittext");
     var side = this.props.side;
 
     var projectLogo = this.props.projectLogo;
@@ -26,12 +25,13 @@ class ProjectInformations extends React.Component {
 
     var projectURL = this.props.projectURL;
     var codeURL = this.props.codeURL;
+    var reference = this.props.reference;
 
     var informationsClass =
       side === "normal" ? "informations" : "r-informations";
 
     return (
-      <div className={informationsClass}>
+      <div className={informationsClass} ref={reference}>
         <div className="logo-container">
           <img className="logo" src={projectLogo} alt="Logo"></img>
         </div>

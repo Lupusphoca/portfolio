@@ -11,7 +11,6 @@ class HeroPresentation extends React.Component {
         <div className="hero-text">
           <h1> Pierre ARNAUDET </h1>
           <p> Front-End React.JS & Unity - Developer </p>
-          <button> Contact me </button>
         </div>
       </div>
     );
