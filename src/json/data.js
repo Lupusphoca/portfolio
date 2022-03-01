@@ -57,7 +57,7 @@ export const stockProjects = [
     D - Inversion des dépendances (Dependency inversion principle).`,
     projectResumeEN: ``,
     projectURL: "",
-    codeURL: ""
+    codeURL: "https://github.com/Lupusphoca/framework"
   },
   {
     projectTitle: "A Flower Into Void",
@@ -77,7 +77,7 @@ export const stockProjects = [
     Permet d'implémenter sur Unity un retour ingame de son chat Twitch et l'activation de commande depuis le chat influant sur le jeu.`,
     projectResumeEN: ``,
     projectURL: "",
-    codeURL: ""
+    codeURL: "https://github.com/Lupusphoca/twitch-system-irc"
   },
   {
     projectTitle: "Corrompu",
