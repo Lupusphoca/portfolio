@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fe1ae7a6.chunk.css",
-    "main.js": "/portfolio/static/js/main.cde8cafe.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cde8cafe.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.9fb16e75.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9fb16e75.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.6d1947dc.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.6d1947dc.js.map",
     "static/js/2.69094d9f.chunk.js": "/portfolio/static/js/2.69094d9f.chunk.js",
@@ -24,12 +24,13 @@
     "static/media/rushline-logo.a45f83da.png": "/portfolio/static/media/rushline-logo.a45f83da.png",
     "static/media/sesame-logo.b5c025ff.png": "/portfolio/static/media/sesame-logo.b5c025ff.png",
     "static/media/sesame.0f9d42fb.jpg": "/portfolio/static/media/sesame.0f9d42fb.jpg",
+    "static/media/twitchchatirc.75461509.jpg": "/portfolio/static/media/twitchchatirc.75461509.jpg",
     "static/media/twitter.c7507724.png": "/portfolio/static/media/twitter.c7507724.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6d1947dc.js",
     "static/js/2.69094d9f.chunk.js",
     "static/css/main.fe1ae7a6.chunk.css",
-    "static/js/main.cde8cafe.chunk.js"
+    "static/js/main.9fb16e75.chunk.js"
   ]
 }
