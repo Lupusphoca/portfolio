@@ -41,6 +41,15 @@ class Application extends React.Component {
       case "alice":
         ref = this.refAlice;
         break;
+      case "framework":
+        ref = this.refFramework;
+        break;
+      case "afiv":
+        ref = this.refAFIV;
+        break;
+      case "irc":
+        ref = this.refIRC;
+        break;
       case "corrompu":
         ref = this.refCorrompu;
         break;
@@ -101,56 +110,56 @@ class Application extends React.Component {
             <Project
               side={"reverse"}
               projectKey="3"
-              modalImage={stockProjects[2].modalImage}
-              projectLogo={stockProjects[2].projectLogo}
-              projectTitle={stockProjects[2].projectTitle}
-              projectResume={stockProjects[2].projectResumeFR}
-              projectURL={stockProjects[2].projectURL}
-              codeURL={stockProjects[2].codeURL}
-              reference={this.refFramework}
-            />
-            <Project
-              side={"normal"}
-              projectKey="4"
-              modalImage={stockProjects[2].modalImage}
-              projectLogo={stockProjects[2].projectLogo}
-              projectTitle={stockProjects[2].projectTitle}
-              projectResume={stockProjects[2].projectResumeFR}
-              projectURL={stockProjects[2].projectURL}
-              codeURL={stockProjects[2].codeURL}
-              reference={this.refAFIV}
-            />
-            <Project
-              side={"reverse"}
-              projectKey="5"
-              modalImage={stockProjects[2].modalImage}
-              projectLogo={stockProjects[2].projectLogo}
-              projectTitle={stockProjects[2].projectTitle}
-              projectResume={stockProjects[2].projectResumeFR}
-              projectURL={stockProjects[2].projectURL}
-              codeURL={stockProjects[2].codeURL}
-              reference={this.refIRC}
-            />
-            <Project
-              side={"normal"}
-              projectKey="6"
               modalImage={stockProjects[3].modalImage}
               projectLogo={stockProjects[3].projectLogo}
               projectTitle={stockProjects[3].projectTitle}
               projectResume={stockProjects[3].projectResumeFR}
               projectURL={stockProjects[3].projectURL}
               codeURL={stockProjects[3].codeURL}
-              reference={this.refCorrompu}
+              reference={this.refFramework}
             />
             <Project
-              side={"reverse"}
-              projectKey="7"
+              side={"normal"}
+              projectKey="4"
               modalImage={stockProjects[4].modalImage}
               projectLogo={stockProjects[4].projectLogo}
               projectTitle={stockProjects[4].projectTitle}
               projectResume={stockProjects[4].projectResumeFR}
               projectURL={stockProjects[4].projectURL}
               codeURL={stockProjects[4].codeURL}
+              reference={this.refAFIV}
+            />
+            <Project
+              side={"reverse"}
+              projectKey="5"
+              modalImage={stockProjects[5].modalImage}
+              projectLogo={stockProjects[5].projectLogo}
+              projectTitle={stockProjects[5].projectTitle}
+              projectResume={stockProjects[5].projectResumeFR}
+              projectURL={stockProjects[5].projectURL}
+              codeURL={stockProjects[5].codeURL}
+              reference={this.refIRC}
+            />
+            <Project
+              side={"normal"}
+              projectKey="6"
+              modalImage={stockProjects[6].modalImage}
+              projectLogo={stockProjects[6].projectLogo}
+              projectTitle={stockProjects[6].projectTitle}
+              projectResume={stockProjects[6].projectResumeFR}
+              projectURL={stockProjects[6].projectURL}
+              codeURL={stockProjects[6].codeURL}
+              reference={this.refCorrompu}
+            />
+            <Project
+              side={"reverse"}
+              projectKey="7"
+              modalImage={stockProjects[7].modalImage}
+              projectLogo={stockProjects[7].projectLogo}
+              projectTitle={stockProjects[7].projectTitle}
+              projectResume={stockProjects[7].projectResumeFR}
+              projectURL={stockProjects[7].projectURL}
+              codeURL={stockProjects[7].codeURL}
               reference={this.refRainymood}
             />
           </main>
