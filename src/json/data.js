@@ -7,6 +7,8 @@ import SesameLogo from "../images/sesame/sesame-logo.png";
 import AliceModalImage from "../images/alice/alice.jpg";
 import AliceLogo from "../images/alice/alice-logo.png";
 
+import IRCModalImage from "../images/twitchchatirc/twitchchatirc.jpg";
+
 import CorrompuModalImage from "../images/corrompu/corrompu.jpg";
 import CorrompuLogo from "../images/corrompu/corrompu-logo.png";
 
@@ -66,12 +68,12 @@ export const stockProjects = [
     projectResumeFR: `[WIP] Une vertical slice d'un platformer 3D grandement inspiré de Super Mario Galaxy. 
     Plusieurs type de gravité et une grande diversité de mouvement sur le personnage permettent d'avoir un contrôle et un déplacement fluide du personnage au travers des différentes planètes.`,
     projectResumeEN: ``,
-    projectURL: "",
+    projectURL: "https://www.youtube.com/watch?v=NVhJa44EzJ0&t=13s",
     codeURL: ""
   },
   {
     projectTitle: "Twitch IRC Chat",
-    modalImage: null,
+    modalImage: IRCModalImage,
     projectLogo: null,
     projectResumeFR: `Module de connexion et de lecture pour les Twitch IRC Chat via OAuth key. 
     Permet d'implémenter sur Unity un retour ingame de son chat Twitch et l'activation de commande depuis le chat influant sur le jeu.`,
