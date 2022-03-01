@@ -20,6 +20,9 @@ class Application extends React.Component {
     this.refRushline = React.createRef();
     this.refSesame = React.createRef();
     this.refAlice = React.createRef();
+    this.refFramework = React.createRef();
+    this.refAFIV = React.createRef();
+    this.refIRC = React.createRef();
     this.refCorrompu = React.createRef();
     this.refRainymood = React.createRef();
     this.refContact = React.createRef();
@@ -68,7 +71,7 @@ class Application extends React.Component {
               modalImage={stockProjects[0].modalImage}
               projectLogo={stockProjects[0].projectLogo}
               projectTitle={stockProjects[0].projectTitle}
-              projectResume={stockProjects[0].projectResume}
+              projectResume={stockProjects[0].projectResumeFR}
               projectURL={stockProjects[0].projectURL}
               codeURL={stockProjects[0].codeURL}
               reference={this.refRushline}
@@ -79,7 +82,7 @@ class Application extends React.Component {
               modalImage={stockProjects[1].modalImage}
               projectLogo={stockProjects[1].projectLogo}
               projectTitle={stockProjects[1].projectTitle}
-              projectResume={stockProjects[1].projectResume}
+              projectResume={stockProjects[1].projectResumeFR}
               projectURL={stockProjects[1].projectURL}
               codeURL={stockProjects[1].codeURL}
               reference={this.refSesame}
@@ -90,7 +93,7 @@ class Application extends React.Component {
               modalImage={stockProjects[2].modalImage}
               projectLogo={stockProjects[2].projectLogo}
               projectTitle={stockProjects[2].projectTitle}
-              projectResume={stockProjects[2].projectResume}
+              projectResume={stockProjects[2].projectResumeFR}
               projectURL={stockProjects[2].projectURL}
               codeURL={stockProjects[2].codeURL}
               reference={this.refAlice}
@@ -98,21 +101,54 @@ class Application extends React.Component {
             <Project
               side={"reverse"}
               projectKey="3"
+              modalImage={stockProjects[2].modalImage}
+              projectLogo={stockProjects[2].projectLogo}
+              projectTitle={stockProjects[2].projectTitle}
+              projectResume={stockProjects[2].projectResumeFR}
+              projectURL={stockProjects[2].projectURL}
+              codeURL={stockProjects[2].codeURL}
+              reference={this.refFramework}
+            />
+            <Project
+              side={"normal"}
+              projectKey="4"
+              modalImage={stockProjects[2].modalImage}
+              projectLogo={stockProjects[2].projectLogo}
+              projectTitle={stockProjects[2].projectTitle}
+              projectResume={stockProjects[2].projectResumeFR}
+              projectURL={stockProjects[2].projectURL}
+              codeURL={stockProjects[2].codeURL}
+              reference={this.refAFIV}
+            />
+            <Project
+              side={"reverse"}
+              projectKey="5"
+              modalImage={stockProjects[2].modalImage}
+              projectLogo={stockProjects[2].projectLogo}
+              projectTitle={stockProjects[2].projectTitle}
+              projectResume={stockProjects[2].projectResumeFR}
+              projectURL={stockProjects[2].projectURL}
+              codeURL={stockProjects[2].codeURL}
+              reference={this.refIRC}
+            />
+            <Project
+              side={"normal"}
+              projectKey="6"
               modalImage={stockProjects[3].modalImage}
               projectLogo={stockProjects[3].projectLogo}
               projectTitle={stockProjects[3].projectTitle}
-              projectResume={stockProjects[3].projectResume}
+              projectResume={stockProjects[3].projectResumeFR}
               projectURL={stockProjects[3].projectURL}
               codeURL={stockProjects[3].codeURL}
               reference={this.refCorrompu}
             />
             <Project
-              side={"normal"}
-              projectKey="4"
+              side={"reverse"}
+              projectKey="7"
               modalImage={stockProjects[4].modalImage}
               projectLogo={stockProjects[4].projectLogo}
               projectTitle={stockProjects[4].projectTitle}
-              projectResume={stockProjects[4].projectResume}
+              projectResume={stockProjects[4].projectResumeFR}
               projectURL={stockProjects[4].projectURL}
               codeURL={stockProjects[4].codeURL}
               reference={this.refRainymood}
