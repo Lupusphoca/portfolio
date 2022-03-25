@@ -56,8 +56,9 @@ export const stockProjects = [
   },
   {
     projectTitle: "S.O.L.I.D Personal Unity Framework",
-    modalImage: AFIVModalImage,
-    projectLogo: AFIVLogoImage,
+    modalImage: SOLIDModalImage,
+    projectLogo: SOLIDLogoImage,
+
     projectResumeFR: `Framework personnel utilisé pour différents projets et basé sur une architecture dite S.O.L.I.D. \r
     S - Responsabilité unique (Single responsibility principle), \r
     O - Ouvert/fermé (Open/closed principle), \r
@@ -70,8 +71,8 @@ export const stockProjects = [
   },
   {
     projectTitle: "A Flower Into Void",
-    modalImage: SOLIDModalImage,
-    projectLogo: SOLIDLogoImage,
+    modalImage: AFIVModalImage,
+    projectLogo: AFIVLogoImage, 
     projectResumeFR: `[WIP] Une vertical slice d'un platformer 3D grandement inspiré de Super Mario Galaxy. 
     Plusieurs type de gravité et une grande diversité de mouvement sur le personnage permettent d'avoir un contrôle et un déplacement fluide du personnage au travers des différentes planètes.`,
     projectResumeEN: ``,
