@@ -7,7 +7,14 @@ import SesameLogo from "../images/sesame/sesame-logo.png";
 import AliceModalImage from "../images/alice/alice.jpg";
 import AliceLogo from "../images/alice/alice-logo.png";
 
+import SOLIDModalImage from "../images/solid/solid.png";
+import SOLIDLogoImage from "../images/solid/csharp-logo.png";
+
+import AFIVModalImage from "../images/afiv/afiv.png";
+import AFIVLogoImage from "../images/afiv/afiv-logo.png";
+
 import IRCModalImage from "../images/twitchchatirc/twitchchatirc.jpg";
+import IRCLogoImage from "../images/twitchchatirc/twitch.png";
 
 import CorrompuModalImage from "../images/corrompu/corrompu.jpg";
 import CorrompuLogo from "../images/corrompu/corrompu-logo.png";
@@ -49,8 +56,8 @@ export const stockProjects = [
   },
   {
     projectTitle: "S.O.L.I.D Personal Unity Framework",
-    modalImage: null,
-    projectLogo: null,
+    modalImage: AFIVModalImage,
+    projectLogo: AFIVLogoImage,
     projectResumeFR: `Framework personnel utilisé pour différents projets et basé sur une architecture dite S.O.L.I.D. \r
     S - Responsabilité unique (Single responsibility principle), \r
     O - Ouvert/fermé (Open/closed principle), \r
@@ -63,8 +70,8 @@ export const stockProjects = [
   },
   {
     projectTitle: "A Flower Into Void",
-    modalImage: null,
-    projectLogo: null,
+    modalImage: SOLIDModalImage,
+    projectLogo: SOLIDLogoImage,
     projectResumeFR: `[WIP] Une vertical slice d'un platformer 3D grandement inspiré de Super Mario Galaxy. 
     Plusieurs type de gravité et une grande diversité de mouvement sur le personnage permettent d'avoir un contrôle et un déplacement fluide du personnage au travers des différentes planètes.`,
     projectResumeEN: ``,
@@ -74,7 +81,7 @@ export const stockProjects = [
   {
     projectTitle: "Twitch IRC Chat",
     modalImage: IRCModalImage,
-    projectLogo: null,
+    projectLogo: IRCLogoImage,
     projectResumeFR: `Module de connexion et de lecture pour les Twitch IRC Chat via OAuth key. 
     Permet d'implémenter sur Unity un retour ingame de son chat Twitch et l'activation de commande depuis le chat influant sur le jeu.`,
     projectResumeEN: ``,

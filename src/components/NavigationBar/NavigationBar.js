@@ -32,7 +32,7 @@ class NavigationBar extends React.Component {
           <Name />
           <div className="topics">
             <h2 onClick={() => this.props.scrollToContent("rushline")}>Projets</h2>
-            <h2 onClick={() => this.props.scrollToContent("contact")}>Contact</h2>
+            <h2 onClick={() => this.props.scrollToContent("footer")}>Social</h2>
           </div>
         </div>
         <div id="empty-div" />

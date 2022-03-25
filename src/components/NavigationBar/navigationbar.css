@@ -23,13 +23,15 @@ h2:hover {
 }
 
 .navbar {
-  background-color: #389270;
+  background-color: #272727d0;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 2;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .sticky {

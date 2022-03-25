@@ -4,7 +4,7 @@ import React from "react";
 // == Import : local components
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Project from "../Project/Project";
-import ContactForm from "../ContactForm/ContactForm";
+// import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
 import HeroPresentation from "../HeroPresentation/HeroPresentation";
 
@@ -26,6 +26,7 @@ class Application extends React.Component {
     this.refCorrompu = React.createRef();
     this.refRainymood = React.createRef();
     this.refContact = React.createRef();
+    this.refFooter = React.createRef();
     this.scrollToContent = this.scrollToContent.bind(this);
   }
 
@@ -56,8 +57,11 @@ class Application extends React.Component {
       case "rainymood":
         ref = this.refRainymood;
         break;
-      case "contact":
-        ref = this.refContact;
+      // case "contact":
+      //   ref = this.refContact;
+      //   break;
+      case "footer":
+        ref = this.refFooter;
         break;
       default:
         break;
@@ -163,9 +167,9 @@ class Application extends React.Component {
               reference={this.refRainymood}
             />
           </main>
-          <ContactForm reference={this.refContact} />
+          {/* <ContactForm reference={this.refContact} /> */}
         </body>
-        <Footer />
+        <Footer reference={this.refFooter} />
       </html>
     );
   }

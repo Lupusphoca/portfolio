@@ -66,8 +66,9 @@
 .url-button {
   cursor: pointer;
   color: whitesmoke;
-  background-color: #99b372;
-  border: 1px solid whitesmoke;
+  /* background-color: #99b372; */
+  background-color: #272727d0;
+  border: 2px solid whitesmoke;
 
   padding: 15px;
   align-self: center;
@@ -76,8 +77,9 @@
 }
 
 .url-button:hover {
-  background-color: #787a48;
-  opacity: 0.3;
+  /* background-color: #787a48; */
+  background-color: #272727d0;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1000px) {
